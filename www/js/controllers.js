@@ -22,7 +22,15 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+
+})
+
+.controller('PointCtrl', function($scope, $stateParams, Points) {
+   $scope.points = Points.all();
+   $scope.remove = function(point) {
+     Points.remove(point);
+   };
+})
+.controller('PointDetailCtrl', function($scope, $stateParams, Points) {
+  $scope.point = Points.get($stateParams.pointId);
 });
