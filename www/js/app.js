@@ -32,7 +32,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   $stateProvider
 
   // setup an abstract state for the tabs directive
-    .state('tab', {
+  .state('tab', {
     url: '/tab',
     abstract: true,
     templateUrl: 'templates/tabs.html'
@@ -40,14 +40,19 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   // Each tab has its own nav history stack:
 
-  .state('tab.dash', {
-    url: '/dash',
+  .state('tab.matches', {
+    url: '/matches',
     views: {
-      'tab-dash': {
-        templateUrl: 'templates/tab-dash.html',
-        controller: 'DashCtrl'
+      'tab-match': {
+        templateUrl: 'templates/tab-match.html',
+        controller: 'MatchesCtrl'
       }
     }
+  })
+  .state('match-detail',{
+    url: '/matches/:matchId',
+    templateUrl: 'templates/match-detail.html',
+    controller: 'MatchDetailCtrl'
   })
 
   .state('tab.chats', {
@@ -80,7 +85,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('tab.point', {
-    url: '/point',
+    url: '/points',
     views: {
       'tab-point': {
         templateUrl: 'templates/tab-point.html',
@@ -88,17 +93,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-    .state('tab.point-detail', {
-      url: '/point/:pointId',
-      views: {
-        'tab-point': {
-          templateUrl: 'templates/point-detail.html',
-          controller: 'PointDetailCtrl'
-        }
-      }
-    });
+  .state('point-detail', {
+    url: '/points/:pointId',
+    templateUrl: 'templates/point-detail.html',
+    controller: 'PointDetailCtrl'
+  });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/matches');
 
 });
