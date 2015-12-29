@@ -64,24 +64,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
-        }
-      }
-    })
+    
+  .state('chat-detail', {
+    url: '/chats/:chatId',
+    templateUrl: 'templates/chat-detail.html',
+    controller: 'ChatDetailCtrl'
+  })
 
   .state('tab.account', {
-    url: '/account',
+    url: '/accounts',
     views: {
       'tab-account': {
         templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+        controller: 'AccountsCtrl'
       }
     }
+  })
+  .state('account-detail', {
+    url: '/accounts/:accountId',
+    templateUrl: 'templates/account-detail.html',
+    controller: 'AccountDetailCtrl'
   })
 
   .state('tab.point', {

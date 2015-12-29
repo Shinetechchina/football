@@ -21,8 +21,15 @@ angular.module('starter.controllers', [])
   $scope.chat = Chats.get($stateParams.chatId);
 })
 
-.controller('AccountCtrl', function($scope) {
+.controller('AccountsCtrl', function($scope, Accounts) {
+  $scope.accounts = Accounts.all();
+  $scope.remove = function(account) {
+    Accounts.remove(account);
+  };
+})
 
+.controller('AccountDetailCtrl', function($scope, $stateParams, Accounts) {
+  $scope.account = Accounts.get($stateParams.accountId);
 })
 
 .controller('PointCtrl', function($scope, $stateParams, Points) {
