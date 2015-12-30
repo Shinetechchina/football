@@ -40,4 +40,16 @@ angular.module('starter.controllers', [])
 })
 .controller('PointDetailCtrl', function($scope, $stateParams, Points) {
   $scope.point = Points.get($stateParams.pointId);
+})
+.controller('PointHomeCtrl', function($scope, $stateParams, Points) {
+  $scope.point = $scope.pointDetailCtrl.point;
+})
+.controller('PointStarCtrl', function($scope, $stateParams, Points) {
+  $scope.point = $scope.pointDetailCtrl.point;
+  $scope.scores = [
+    ["2014-2015", "莱切斯特城", "英超联赛", 35, 5, 2, 0],
+    ["2013-2014", "莱切斯特城", "英冠联赛", 40, 16, 1, 0],
+    ["2013-2014", "莱切斯特城", "英冠联赛", 40, 16, 1, 0],
+    ["2013-2014", "莱切斯特城", "英冠联赛", 40, 16, 1, 0]
+  ]
 });

@@ -6,28 +6,28 @@ angular.module('starter.services', [])
   // Some fake testing data
   var chats = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
+    name: '瓦尔蒂',
+    lastText: '28岁/莱斯特城/9号/前锋',
     face: 'img/ben.png'
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
+    name: '卢卡库',
+    lastText: '22岁/埃弗顿/10号/前锋',
     face: 'img/max.png'
   }, {
     id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
+    name: '伊哈洛',
+    lastText: '26岁/沃特福德/24号/前锋',
     face: 'img/adam.jpg'
   }, {
     id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
+    name: '马赫雷斯',
+    lastText: '24岁/莱斯特城/26号/前锋',
     face: 'img/perry.png'
   }, {
     id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
+    name: '哈尼凯恩',
+    lastText: '22岁/托特纳姆热刺/10号/前锋',
     face: 'img/mike.png'
   }];
 
@@ -52,28 +52,28 @@ angular.module('starter.services', [])
 .factory('Points', function() {
   var points = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
+    name: '瓦尔蒂',
+    lastText: '28岁/莱斯特城/9号/前锋',
     face: 'img/ben.png'
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
+    name: '卢卡库',
+    lastText: '22岁/埃弗顿/10号/前锋',
     face: 'img/max.png'
   }, {
     id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
+    name: '伊哈洛',
+    lastText: '26岁/沃特福德/24号/前锋',
     face: 'img/adam.jpg'
   }, {
     id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
+    name: '马赫雷斯',
+    lastText: '24岁/莱斯特城/26号/前锋',
     face: 'img/perry.png'
   }, {
     id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
+    name: '哈尼凯恩',
+    lastText: '22岁/托特纳姆热刺/10号/前锋',
     face: 'img/mike.png'
   }];
 
@@ -98,28 +98,28 @@ angular.module('starter.services', [])
 .factory('Matches', function() {
   var matches = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
+    name: '瓦尔蒂',
+    lastText: '28岁/莱斯特城/9号/前锋',
     face: 'img/ben.png'
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
+    name: '卢卡库',
+    lastText: '22岁/埃弗顿/10号/前锋',
     face: 'img/max.png'
   }, {
     id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
+    name: '伊哈洛',
+    lastText: '26岁/沃特福德/24号/前锋',
     face: 'img/adam.jpg'
   }, {
     id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
+    name: '马赫雷斯',
+    lastText: '24岁/莱斯特城/26号/前锋',
     face: 'img/perry.png'
   }, {
     id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
+    name: '哈尼凯恩',
+    lastText: '22岁/托特纳姆热刺/10号/前锋',
     face: 'img/mike.png'
   }];
 
@@ -144,28 +144,28 @@ angular.module('starter.services', [])
 .factory('Accounts', function() {
   var accounts = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
+    name: '瓦尔蒂',
+    lastText: '28岁/莱斯特城/9号/前锋',
     face: 'img/ben.png'
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
+    name: '卢卡库',
+    lastText: '22岁/埃弗顿/10号/前锋',
     face: 'img/max.png'
   }, {
     id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
+    name: '伊哈洛',
+    lastText: '26岁/沃特福德/24号/前锋',
     face: 'img/adam.jpg'
   }, {
     id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
+    name: '马赫雷斯',
+    lastText: '24岁/莱斯特城/26号/前锋',
     face: 'img/perry.png'
   }, {
     id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
+    name: '哈尼凯恩',
+    lastText: '22岁/托特纳姆热刺/10号/前锋',
     face: 'img/mike.png'
   }];
 

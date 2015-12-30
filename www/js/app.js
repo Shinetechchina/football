@@ -114,11 +114,28 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         // templateUrl: 'templates/tab-point.html',
         // controller: 'PointCtrl'
         templateUrl: 'templates/point-detail.html',
-        controller: 'PointDetailCtrl'
+        controller: 'PointDetailCtrl as pointDetailCtrl'
       }
     }
-  });
-
+  })
+  .state('tab.point-detail.home', {
+    url: '/home',
+    views: {
+      'point-detail': {
+        templateUrl: 'templates/point-home.html',
+        controller: 'PointHomeCtrl'
+      }
+    }
+  })
+  .state('tab.point-detail.star', {
+    url: '/star',
+    views: {
+      'point-detail': {
+        templateUrl: 'templates/point-star.html',
+        controller: 'PointStarCtrl'
+      }
+    }
+  })
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/matches');
 

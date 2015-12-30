@@ -1,23 +1,24 @@
 <ion-view view-title="{{point.name}}" hide-back-button="false" hide-tabs>
   <ion-content class="padding">
-    <div style="margin-bottom: 30px;">
-      <img ng-src="{{point.face}}" style="width: 64px; height: 64px">
-      <p>
-        {{point.lastText}}
-      </p>
-    </div>
+    <div class="list">
 
-    <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+      <a class="item item-thumbnail-left" href="#">
+        <img ng-src="{{point.face}}">
+        <h2>{{point.name}}</h2>
+        <p>{{point.lastText}}</p>
+      </a>
+    </div>
+    <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light" style="height:49px;">
       <div class="tabs" style="top: 120px;">
-        <a class="tab-item active tab-icon-top">
-          <i class="icon ion-home"></i>
-          Test
+        <a class="tab-item tab-icon-top" ui-sref="tab.point-detail.home" ui-sref-active="active">
+          资料
         </a>
-        <a class="tab-item">
-          <i class="icon ion-star"></i>
-          Favorites
+        <a class="tab-item" ui-sref="tab.point-detail.star" ui-sref-active="active">
+          比赛数据
         </a>
       </div>
+    </div>
+    <div class="row" ui-view="point-detail">
     </div>
   </ion-content>
 </ion-view>
