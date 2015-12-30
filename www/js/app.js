@@ -49,10 +49,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-  .state('match-detail',{
+  .state('tab.match-detail',{
     url: '/matches/:matchId',
-    templateUrl: 'templates/match-detail.html',
-    controller: 'MatchDetailCtrl'
+    views: {
+      'tab-match': {
+        templateUrl: 'templates/match-detail.html',
+        controller: 'MatchDetailCtrl'
+      }
+    }
   })
 
   .state('tab.chats', {
@@ -65,10 +69,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-  .state('chat-detail', {
+  .state('tab.chat-detail', {
     url: '/chats/:chatId',
-    templateUrl: 'templates/chat-detail.html',
-    controller: 'ChatDetailCtrl'
+    views: {
+      'tab-chats' : {
+        templateUrl: 'templates/chat-detail.html',
+        controller: 'ChatDetailCtrl'
+      }
+    }
   })
 
   .state('tab.account', {
@@ -80,10 +88,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-  .state('account-detail', {
+  .state('tab.account-detail', {
     url: '/accounts/:accountId',
-    templateUrl: 'templates/account-detail.html',
-    controller: 'AccountDetailCtrl'
+    views: {
+      'tab-account': {
+        templateUrl: 'templates/account-detail.html',
+        controller: 'AccountDetailCtrl'
+      }
+    }
   })
 
   .state('tab.point', {
@@ -95,10 +107,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-  .state('point-detail', {
+  .state('tab.point-detail', {
     url: '/points/:pointId',
-    templateUrl: 'templates/point-detail.html',
-    controller: 'PointDetailCtrl'
+    views: {
+      'tab-point': {
+        // templateUrl: 'templates/tab-point.html',
+        // controller: 'PointCtrl'
+        templateUrl: 'templates/point-detail.html',
+        controller: 'PointDetailCtrl'
+      }
+    }
   });
 
   // if none of the above states are matched, use this as the fallback
