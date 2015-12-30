@@ -5,6 +5,11 @@ angular.module('starter.services', [])
 
   // Some fake testing data
   var chats = [{
+    id: 2,
+    name: '伊哈洛',
+    lastText: '26岁/沃特福德/24号/前锋',
+    face: 'img/adam.jpg'
+  }, {
     id: 0,
     name: '瓦尔蒂',
     lastText: '28岁/莱斯特城/9号/前锋',
@@ -15,20 +20,15 @@ angular.module('starter.services', [])
     lastText: '22岁/埃弗顿/10号/前锋',
     face: 'img/max.png'
   }, {
-    id: 2,
-    name: '伊哈洛',
-    lastText: '26岁/沃特福德/24号/前锋',
-    face: 'img/adam.jpg'
+    id: 4,
+    name: '哈尼凯恩',
+    lastText: '22岁/托特纳姆热刺/10号/前锋',
+    face: 'img/mike.png'
   }, {
     id: 3,
     name: '马赫雷斯',
     lastText: '24岁/莱斯特城/26号/前锋',
     face: 'img/perry.png'
-  }, {
-    id: 4,
-    name: '哈尼凯恩',
-    lastText: '22岁/托特纳姆热刺/10号/前锋',
-    face: 'img/mike.png'
   }];
 
   return {
@@ -55,27 +55,32 @@ angular.module('starter.services', [])
     name: '瓦尔蒂',
     lastText: '28岁/莱斯特城/9号/前锋',
     face: 'img/ben.png'
-  }, {
-    id: 1,
-    name: '卢卡库',
-    lastText: '22岁/埃弗顿/10号/前锋',
-    face: 'img/max.png'
-  }, {
+  },
+  {
     id: 2,
     name: '伊哈洛',
     lastText: '26岁/沃特福德/24号/前锋',
     face: 'img/adam.jpg'
-  }, {
-    id: 3,
-    name: '马赫雷斯',
-    lastText: '24岁/莱斯特城/26号/前锋',
-    face: 'img/perry.png'
-  }, {
+  },
+  {
+    id: 1,
+    name: '卢卡库',
+    lastText: '22岁/埃弗顿/10号/前锋',
+    face: 'img/max.png'
+  },
+  {
     id: 4,
     name: '哈尼凯恩',
     lastText: '22岁/托特纳姆热刺/10号/前锋',
     face: 'img/mike.png'
-  }];
+  },
+  {
+    id: 3,
+    name: '马赫雷斯',
+    lastText: '24岁/莱斯特城/26号/前锋',
+    face: 'img/perry.png'
+  },
+  ];
 
   return {
     all: function() {
@@ -96,17 +101,20 @@ angular.module('starter.services', [])
 })
 
 .factory('Matches', function() {
-  var matches = [{
-    id: 0,
-    name: '瓦尔蒂',
-    lastText: '28岁/莱斯特城/9号/前锋',
-    face: 'img/ben.png'
-  }, {
+  var matches = [
+  {
     id: 1,
     name: '卢卡库',
     lastText: '22岁/埃弗顿/10号/前锋',
     face: 'img/max.png'
-  }, {
+  },
+    {
+    id: 0,
+    name: '瓦尔蒂',
+    lastText: '28岁/莱斯特城/9号/前锋',
+    face: 'img/ben.png'
+  },
+  {
     id: 2,
     name: '伊哈洛',
     lastText: '26岁/沃特福德/24号/前锋',
