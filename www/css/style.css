@@ -1,1 +1,9 @@
 /* Empty. Add your own CSS if you like */
+
+.nav-bar-hide > .tabs {
+  display: none;
+}
+
+.tab-item {
+  max-width: initial;
+}
