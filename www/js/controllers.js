@@ -1,9 +1,12 @@
 angular.module('starter.controllers', [])
 
-.controller('MatchesCtrl', function($scope, Matches) {
+.controller('MatchesCtrl', function($scope, Matches, $ionicSideMenuDelegate) {
   $scope.matches = Matches.all();
   $scope.remove = function(match) {
     Matches.remove(match);
+  };
+  $scope.slideSetting = function() {
+    $ionicSideMenuDelegate.toggleLeft();
   }
 })
 .controller('MatchDetailCtrl', function($scope, $stateParams, Matches) {
